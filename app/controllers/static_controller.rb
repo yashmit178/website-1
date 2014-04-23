@@ -18,7 +18,6 @@ class StaticController < ApplicationController
   end
 
   def home
-    @testimonials = TESTIMONIES.select{|e| e[:display]}
     @projects = PROJECTS.select { |p| p[:display] }
     @title = 'Ruby on Rails experts in India | Josh Software Private Limited'
   end

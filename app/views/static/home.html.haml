@@ -34,25 +34,6 @@
         and
         %a{href: "http://trello.com", target: '_blank'} Trello
         are some of the tools we use to ensure our clients are always happy!
-.container
-  .row.well
-    .col-lg-9.col-md-9.col-sm-9.col-xs-12
-      .about-testimonial.boxed-style.about-flexslider
-        %section.slider
-          .flexslider
-            %ul.slides.about-flex-slides
-              - @testimonials.each do |testimonial|
-                %li
-                  .about-testimonial-author #{testimonial[:endorser]}
-                  %span.about-testimonial-company #{testimonial[:company]}
-                  .about-testimonial-content
-                    %p.about-testimonial-quote
-                      #{testimonial[:endorsement]}
-    .col-lg-3.col-md-3.col-sm-3.col-xs-9
-      .about-testimonial
-        .about-testimonial-author Fun at JOSH
-      #fun.align-center
-        = image_tag 'loading.gif'
 .parallax1
   .clients
     .container

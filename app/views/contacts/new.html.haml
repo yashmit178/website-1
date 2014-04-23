@@ -3,49 +3,23 @@
   #map-canvas{:style => "width: 100%; height: 398px"}
 .container
   .row
-    /
-      .col-lg-5.col-sm-5.address
-        %h4 Pune
-        %p
-          Josh Software
-          %br/
-          Address: 6, Thube Park, Shivajinagar,
-          %br/
-          Pune - 411 005,
-          %br/
-          Maharashtra, India.
-        %br/
-        %br/
-        %br/
-        %p
-          Phone: +91 - 20 - 25539995
-          %br/
-          Email: info@joshsoftware.com
     .col-lg-5.col-sm-5.address
-      %h4 Pune
       %p
-        Josh Software
+        Synergy Software Solutions Pte Ltd 
         %br/
-        Address: A13/14 Sunflower Building, 5th Floor,
+        Address: 10 Raeburn Park, #02-08
         %br/
-        Survey No. 77/1, Mhalunge Baner Road,
-        %br/
-        Baner, Pune - 411 045,
-        %br/
-        Maharashtra, India.
+        Singapore 088702
       %br/
       %br/
       %br/
       %p
-        /
-          Phone: +91 - 20 - 206531316
-          %br/
-        Email: info@joshsoftware.com
+        Phone: (65) 66928014
+        %br/
+        Email: info@synergysoft.com.sg
     .col-lg-7.col-sm-7.address
       %h4 Send a Message
       .contact-form
-        /
-          %form{action: 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', method: 'POST', id: 'contact_form', role: 'form'}
         = form_for @contact, url: contact_us_path, method: :post do |f|
           = f.hidden_field :ip
           = f.hidden_field :location
