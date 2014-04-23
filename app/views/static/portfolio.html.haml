@@ -1,0 +1,51 @@
+= render 'shared/breadcrumbs', data: nil
+.container
+  .row
+    .col-lg-2
+      .blog-side-item
+        .category
+          %h3 Recent Work
+          %ul.list-unstyled
+            - @projects.each do |project|
+              %li
+                = link_to project[:title], "##{project[:title]}"
+
+    .col-lg-10
+      - @projects.each do |project|
+        .blog-item{id: project[:title]}
+          .row
+            .col-lg-10.col-sm-10
+              %h1
+                = link_to project[:title], project[:url], target: '_blank'
+            .col-lg-7
+              .blog-img.well
+                %a{href: project[:url], target: '_blank'}
+                  = image_tag "portfolio/#{project[:image]}", alt: "Screenshot of #{project[:title]}"
+            .col-lg-5
+              /
+                .col-lg-5
+                  .date-wrap
+                    %span.date #{project[:country]}
+                    %span.month #{project[:year]}
+              .blog-side-item
+                %strong.tags
+                  %ul.list-unstyled.tagg
+                    - project[:technical][:tags].each do |stack|
+                      %li
+                        - if stack == 'filter.js'
+                          = link_to 'filter.js', 'http://github.com/jiren/filter.js'
+                        - elsif stack == 'StreamTable.js'
+                          = link_to 'StreamTable.js', 'https://github.com/jiren/StreamTable.js'
+                        - else
+                          = stack
+                  - if project[:case_study]
+                    %ul.list-unstyled.tagg
+                      %li= link_to "Case study", project[:case_study], target: "_blank"
+
+          .row
+            .col-md-12
+              %br
+              %p= raw project[:description]
+              %a.pull-right{:href => "#"}
+                %i.icon-arrow-up{'data-toggle'=> 'tooltip', title: 'To top', 'data-placement'=> 'top'}
+

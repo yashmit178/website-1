@@ -1,0 +1,21 @@
+= render 'shared/breadcrumbs', data: nil
+.container
+  .row
+    .col-lg-12
+      - @testimonies.each_with_index do |testimony, indx|
+        .blog-item
+          .row
+            .col-lg-2.col-sm-2.text-right
+              .author
+                #{testimony[:endorser]}
+              %ul.list-unstyled
+                %li
+                  #{testimony[:title]}
+                %li
+                  #{testimony[:company]}
+            .col-lg-10.col-sm-10
+              %p #{raw testimony[:endorsement]} 
+              - if indx > 3
+                %a.pull-right{href: '#'}
+                  %i.icon-arrow-up{"data-toggle"=>"tooltip", "data-placement"=>"top", "data-original-title"=>"To top"}
+

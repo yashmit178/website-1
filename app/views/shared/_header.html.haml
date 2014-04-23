@@ -1,0 +1,39 @@
+%header.header-frontend
+  .navbar.navbar-default.navbar-static-top
+    .container
+      .navbar-header
+        %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{:href => root_path}
+          = image_tag 'JOSHSoftware_LogoStack_Color_org.png', alt: 'Josh Software'
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav
+          %li{class: "#{check_if_active('home')}"}
+            = link_to 'Home', root_path
+          %li.dropdown
+            %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown", "data-toggle" => "dropdown", :href => "#"}
+              About Us
+              %b.icon-angle-down
+            %ul.dropdown-menu.decrease_dropdown
+              /
+                %li
+                %a{:href => "about-us"} Company
+              %li
+                %a{:href => "team"} Team
+              %li
+                %a{:href => "news"} Josh in News
+          %li{class: "#{check_if_active('portfolio')}"}
+            %a{:href => "portfolio"} Portfolio
+          %li{class: "#{check_if_active('testimonials')}"}
+            %a{:href => "testimonials"} Testimonials
+          %li{class: "#{check_if_active('open_source')}"}
+            %a{:href => "open-source"} Open Source
+          %li
+            %a{:href => "http://blog.joshsoftware.com/", target: '_blank'} Blog
+          %li{class: "#{check_if_active('contact_us')}"}
+            = link_to 'Contact Us', new_contact_path
+          /
+            %li
+              %input.form-control.search{:placeholder => " Search", :type => "text"}/

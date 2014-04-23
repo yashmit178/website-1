@@ -1,0 +1,25 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ */
+ 
+ @import "bootstrap/bootstrap.min";
+ @import "others/theme";
+ @import "others/bootstrap-reset";
+ @import "font_awesome/font-awesome";
+ @import "others/flexslider"; 
+ @import "bxslider/jquery.bxslider";
+ @import "fancybox/jquery.fancybox";
+ @import "revolution_slider/rs-style";
+ @import "revolution_slider/settings";
+ @import "superfish/superfish";
+ @import "superfish/superfish-vertical";
+ @import "others/style";
+ @import "others/style-responsive";

@@ -1,0 +1,109 @@
+= render 'shared/breadcrumbs', data: nil
+.container
+  .row.well
+    .col-lg-3.col-md-3.col-sm-3.col-xs-6
+      .about-carousel
+        #myCarousel.carousel.slide
+          .carousel-inner
+            .item.active
+              %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
+                = image_tag "ruby_and_mongodb_book.jpg", alt: "Ruby and MongoDB Web Development"
+            .item
+              %a{:href => "http://www.packtpub.com/learning-mongoid/book", :target => "_blank"}
+                = image_tag "learning_mongoid_book.jpg", alt: "Learning Mongoid"
+          %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
+            %i.icon-angle-left
+          %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
+            %i.icon-angle-right
+    .col-lg-9.col-md-9.col-sm-9.col-xs-12.about
+      %p 
+        Driven by enthusiasm and passion, Josh is India’s leading company in building innovative web applications working exclusively in 
+        %span.text-danger Ruby On Rails
+        since 2007.
+      %p 
+        We partner with our clients from concept, design, implementation and maintenance. We believe that
+        %span.text-danger Programming is An Art
+        and have a unique organizational process focused on building solutions to facilitate high performance, scalability, and high-standard code quality.
+      %p
+        We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
+      %p 
+        %a{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
+        %a{href: "http://circleci.com", target: '_blank'} CircleCi,
+        %a{href: "http://github.com", target: '_blank'} Github,
+        %a{href: "http://pivotaltracker.com", target: '_blank'} Pivotal Tracker,
+        and
+        %a{href: "http://trello.com", target: '_blank'} Trello
+        are some of the tools we use to ensure our clients are always happy!
+.container
+  .row.well
+    .col-lg-9.col-md-9.col-sm-9.col-xs-12
+      .about-testimonial.boxed-style.about-flexslider
+        %section.slider
+          .flexslider
+            %ul.slides.about-flex-slides
+              - @testimonials.each do |testimonial|
+                %li
+                  .about-testimonial-author #{testimonial[:endorser]}
+                  %span.about-testimonial-company #{testimonial[:company]}
+                  .about-testimonial-content
+                    %p.about-testimonial-quote
+                      #{testimonial[:endorsement]}
+    .col-lg-3.col-md-3.col-sm-3.col-xs-9
+      .about-testimonial
+        .about-testimonial-author Fun at JOSH
+      #fun.align-center
+        = image_tag 'loading.gif'
+.parallax1
+  .clients
+    .container
+      .col-lg-12.text-center
+        %ul.list-unstyled
+          %li
+            %a{href: 'portfolio/#Altizon Datonis'}
+              = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
+          %li
+            %a{href: 'portfolio/#Educade'}
+              = image_tag "client_logos/educade-logo.png", class: 'logo_width'
+          %li
+            %a{href: 'portfolio/#Phalcomm'}
+              = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
+          %li
+            %a{href: 'portfolio/#TourConnect'}
+              = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
+          %li
+            %a{href: 'portfolio/#Shopgodt'}
+              = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
+:javascript
+  RevSlide.initRevolutionSlider();
+
+  $(window).load(function() {
+      $('[data-zlname = reverse-effect]').mateHover({
+          position: 'y-reverse',
+          overlayStyle: 'rolling',
+          overlayBg: '#fff',
+          overlayOpacity: 0.7,
+          overlayEasing: 'easeOutCirc',
+          rollingPosition: 'top',
+          popupEasing: 'easeOutBack',
+          popup2Easing: 'easeOutBack'
+      });
+  });
+
+  $(window).load(function() {
+      $('.flexslider').flexslider({
+          animation: "slide", //slide or swing
+          slideshow: false, //automatic slideshow
+          reverse: false,
+          start: function(slider) {
+              $('body').removeClass('loading');
+          }
+      });
+  });
+
+  $(window).load(function() {
+    image_slide();
+  });
+
+
+  //    fancybox
+  //jQuery(".fancybox").fancybox();
