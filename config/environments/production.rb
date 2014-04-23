@@ -1,4 +1,4 @@
-
+=begin
 data = YAML.load_file("#{Rails.root}/config/credentials.yml")
 if data
   ENV['TWITTER_CONSUMER_KEY'] = data['TWITTER_CONSUMER_KEY']
@@ -10,6 +10,7 @@ if data
   ENV['JOSH_INFO_PASSWORD'] = data['JOSH_INFO_PASSWORD']
   ENV['GOOGLE_DRIVE_SHEET'] = data['GOOGLE_DRIVE_SHEET']
 end
+=end
 
 Website::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
@@ -79,18 +80,18 @@ Website::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.action_mailer.default_url_options = { protocol: 'http', host: 'joshsoftware.com' }
+  config.action_mailer.default_url_options = { protocol: 'http', host: 'synergysoft.herokuapp.com' }
   config.active_support.deprecation = :notify
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-    :user_name => ENV['USERNAME'],
-    :password => ENV['PASSWORD'],
-    :domain => "joshsoftware.com",
-    :address => "smtp.sendgrid.net",
-    :port => 587,
+    :user_name => ENV['POSTMARK_API_KEY'],
+    :password => ENV['POSTMARK_API_KEY'],
+    :domain => "synergysoft.herokuapp.com",
+    :address => ENV["POSTMARK_SMTP_SERVER"],
+    :port => 25,
     :authentication => :plain,
     :enable_starttls_auto => true
   }

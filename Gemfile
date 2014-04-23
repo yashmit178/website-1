@@ -43,6 +43,7 @@ end
 
 group :development do 
   gem 'quiet_assets'
+  gem 'heroku'
 end
 
 
