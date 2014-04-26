@@ -50,14 +50,15 @@ TEAM_MEMBERS= [
 
   { 
     id: "kumar",
-    name: "Kumar",
+    name: "Ramkumar Padmanabhan",
     title: "Founder & Director",
     image: "",
     description: "",
     technical: {
+        twitter: "@RaveRam",
         linkedin: "",
-        facebook: "",
-        github: ""
+        facebook: "www.facebook.com/p.ramkumar",
+        github: "Kumar-Synergy"
     },
     display: true,
     index: 3
