@@ -51,7 +51,7 @@ TEAM_MEMBERS= [
   { 
     id: "kumar",
     name: "Kumar",
-    title: "Director",
+    title: "Founder & Director",
     image: "",
     description: "",
     technical: {
