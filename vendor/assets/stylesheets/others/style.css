@@ -10,13 +10,14 @@ Website: http://thevectorlab.net/
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 
 /*colors as in josh logo
-dark-red #0277C6
-darker-red #9D2322
-darkest-red #6B1809
+cyan #00AEEF
+darkest-gray #231F20
+dark-gray #414042
+gray #BCBEC0
  */
 
 body {
-  color: #797979;
+  color: #414042;
   font-family: 'Open Sans', sans-serif;
   padding: 0px !important;
   margin: 0px !important;
@@ -88,7 +89,7 @@ p {line-height: 22px}
 }
 
 .header-frontend .nav li a, .header-frontend .nav li.active ul.dropdown-menu li a {
-  color: #0277C6;
+  color: #00AEEF;
   font-size: 14px;
   font-weight: 300;
   background: none;
@@ -103,7 +104,7 @@ p {line-height: 22px}
 .header-frontend .nav li.active ul.dropdown-menu li a:hover,
 .header-frontend .nav li.active ul.dropdown-menu li.active a{
   color: white ;
-  background-color: #0277C6; /*navbar links pill color*/
+  background-color: #00AEEF; /*navbar links pill color*/
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -116,7 +117,7 @@ p {line-height: 22px}
 .header-frontend .navbar-default .navbar-nav > .open > a:hover,
 .header-frontend .navbar-default .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #0277C6;
+  background-color: #00AEEF;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -473,7 +474,7 @@ ul.about-flex-slides {
   font-weight: bold;
   line-height: 11px;
   margin: 10px 0 8px 5px;;
-  color: #0277C6;
+  color: #00AEEF;
   font-weight: 300;
 }
 
@@ -928,7 +929,7 @@ ul.about-flex-slides {
 }
 
 .breadcrumbs {
-  background: #8791A5;
+  background: #BCBEC0;
   color: #fff;
   padding: 1px 0; /*changes here will affect the contact us page*/
   margin-bottom: 25px;
@@ -976,11 +977,11 @@ ul.about-flex-slides {
 /*about us*/
 
 .about a{
-  color: #0277C6;
+  color: #00AEEF;
 }
 
 .about a:hover{
-  color: #0277C6;
+  color: #00AEEF;
 }
 
 
@@ -1166,11 +1167,11 @@ ul.about-flex-slides {
 }
 
 .team-social-link a:hover {
-  color: #0277C6;
+  color: #00AEEF;
 }
 
 .person-info h4, .person-info h4 a {
-  color: #0277C6;
+  color: #00AEEF;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -1237,7 +1238,7 @@ ul.about-flex-slides {
 }
 
 .blog-item a {
-  color: #0277C6;
+  color: #00AEEF;
 }
 
 .date-wrap, .comnt-wrap {
@@ -1289,12 +1290,12 @@ ul.about-flex-slides {
 
 .blog-item h1, .blog-item h1 a {
   font-size:25px;
-  color: #0277C6;
+  color: #00AEEF;
   font-weight: 300;
   font-family: 'Fjalla One', sans-serif;
 }
 
-.news_header h1 {font-size: 25px; color: #0277C6; font-weight: 300; font-family: 'Fjalla One', sans-serif;}
+.news_header h1 {font-size: 25px; color: #00AEEF; font-weight: 300; font-family: 'Fjalla One', sans-serif;}
 .blog-item h1 {
   margin-bottom: 20px;
   line-height: 35px;
@@ -1310,14 +1311,14 @@ ul.about-flex-slides {
 }
 
 .blog-item ul li a:hover {
-  color: #0277C6;
+  color: #00AEEF;
 }
 
 
 .author {
   margin:1px 0 5px 0;
   font-size: 17px;
-  color: #0277C6;
+  color: #00AEEF;
 }
 
 .author a, .shate-view a {
@@ -1341,7 +1342,7 @@ ul.about-flex-slides {
 
 .blog-side-item ul li {
   margin-bottom: 5px;
-  border-bottom:1px solid #0277C6; /* side list*/
+  border-bottom:1px solid #00AEEF; /* side list*/
   line-height: 35px;
 }
 
@@ -1351,7 +1352,7 @@ ul.about-flex-slides {
 }
 
 .blog-side-item ul li a:hover{
-  color: #0277C6;
+  color: #00AEEF;
 }
 
 .media p {
@@ -1403,7 +1404,7 @@ ul.tagg li {
 /*footer*/
 
 .footer {
-  background: #475268;
+  background: #414042;
   color: #fff;
   padding: 25px 0 25px 0;
   /*margin-top: 25px;*/
@@ -1492,7 +1493,7 @@ ul.tagg li {
 }
 
 .social-link-footer li a:hover {
-  background: #0277C6; /*footer social links*/
+  background: #00AEEF; /*footer social links*/
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1923,3 +1924,20 @@ ul#filters > .active > span {
   margin-top: -20px;
 }
 
+.text-danger {
+    color: #00AEEF;
+}
+
+.synergy-partner-img {
+    width: 100px;
+}
+
+.josh-partner-img {
+    width: 100px;
+    height: 36px;
+}
+
+.partners li {
+    width: 115px;
+    float: left;
+}
