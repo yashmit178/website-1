@@ -44,19 +44,19 @@ TEAM_MEMBERS= [
         linkedin: "",
         facebook: ""
     },
-    display: true,
+    display: False,
     index: 2
   },
 
   { 
     id: "kumar",
-    name: "Ram Kumar",
-    title: "Director",
+    name: "Ramkumar Padmanabhan",
+    title: "Founder & Director",
     image: "kumar.png",
     description: "",
     technical: {
         twitter: "@RaveRam",
-        facebook: "http://www.facebook.com/p.ramkumar",
+        facebook: "www.facebook.com/p.ramkumar",
         github: "Kumar-Synergy"
     },
     display: true,
