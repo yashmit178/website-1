@@ -11,7 +11,7 @@ TEAM_MEMBERS= [
         github: "Kumar-Synergy"
     },
     display: true,
-    index: 3
+    index: 0
   }
 
   
@@ -30,7 +30,7 @@ TEAM_MEMBERS= [
         github: "gautamrege"
     },
     display: true,
-    index: 0
+    index: 1
   },
 
   { 
@@ -47,7 +47,7 @@ TEAM_MEMBERS= [
         github: "sethu"
     },
     display: true,
-    index: 1
+    index: 2
   },
 
   { 
@@ -62,7 +62,7 @@ TEAM_MEMBERS= [
         facebook: ""
     },
     display: false,
-    index: 2
+    index: 3
   },
 
   ]
