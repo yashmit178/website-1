@@ -44,7 +44,7 @@ TEAM_MEMBERS= [
         linkedin: "",
         facebook: ""
     },
-    display: False,
+    display: false,
     index: 2
   },
 

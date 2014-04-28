@@ -1929,15 +1929,13 @@ ul#filters > .active > span {
 }
 
 .synergy-partner-img {
-    width: 100px;
+    width: 184px;
 }
 
 .josh-partner-img {
-    width: 100px;
-    height: 36px;
+    height: 39px;
 }
 
-.partners li {
-    width: 115px;
-    float: left;
+.partners li:last-child {
+    padding-top: 13px;
 }
