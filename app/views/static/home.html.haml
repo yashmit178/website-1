@@ -1,6 +1,43 @@
 = render 'shared/breadcrumbs', data: nil
-.container.head
-  = image_tag "Banner 2.jpg"
+#myCarousel.carousel
+  %ol.carousel-indicators
+    %li.active{data: {target: "#myCarousel", "slide-to" => 0}}   
+    %li{data: {target: "#myCarousel", "slide-to" => 1}}   
+  .carousel-inner
+    .item.active
+      = image_tag "Banner 2.jpg"
+    .item
+      = image_tag "Banner 1.bmp"
+  %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
+    %i.icon-angle-left
+  %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
+    %i.icon-angle-right
+.container
+  .row
+    .text-center.feature-head
+      %h1 Heading
+      %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+    .col-lg-4.col-sm-4
+      %section
+        .f-box
+          %i.icon-code
+          %h2 Skills
+        %p.f-text
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener.
+    .col-lg-4.col-sm-4
+      %section
+        .f-box
+          %i.icon-gears
+          %h2 Services
+        %p.f-text
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener.
+    .col-lg-4.col-sm-4
+      %section
+        .f-box
+          %i.icon-code
+          %h2 Process
+        %p.f-text
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener.
 .parallax1
   .clients
     .container

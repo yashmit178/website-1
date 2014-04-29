@@ -210,7 +210,7 @@ p {line-height: 22px}
 /*homepage features*/
 
 .feature-head {
-  padding: 10px 0;
+  padding: 50px 0;
 }
 
 .feature-head h1{
@@ -1897,11 +1897,6 @@ ul#filters > .active > span {
 .copyright {
   font-size: 12px;
   padding-top: 25px;
-}
-
-#myCarousel .item img {
-  width: 80%;
-  margin: 0 10% 0 10%;
 }
 
 .moto {
