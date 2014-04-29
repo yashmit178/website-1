@@ -1,5 +1,5 @@
 TEAM_MEMBERS= [
-{ 
+  { 
     id: "kumar",
     name: "Ramkumar Padmanabhan",
     title: "Founder & Director",
@@ -12,11 +12,11 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 0
-  }
+  },
 
   
 
-{ 
+  { 
     id: "gautam-rege",
     name: "Gautam Rege",
     title: "Director",
@@ -63,6 +63,6 @@ TEAM_MEMBERS= [
     },
     display: false,
     index: 3
-  },
+  }
 
-  ]
+]
