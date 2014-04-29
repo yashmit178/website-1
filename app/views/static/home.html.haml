@@ -1,39 +1,6 @@
 = render 'shared/breadcrumbs', data: nil
-.container
-  .row.well
-    .col-lg-3.col-md-3.col-sm-3.col-xs-6
-      .about-carousel
-        #myCarousel.carousel.slide
-          .carousel-inner
-            .item.active
-              %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
-                = image_tag "ruby_and_mongodb_book.jpg", alt: "Ruby and MongoDB Web Development"
-            .item
-              %a{:href => "http://www.packtpub.com/learning-mongoid/book", :target => "_blank"}
-                = image_tag "learning_mongoid_book.jpg", alt: "Learning Mongoid"
-          %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
-            %i.icon-angle-left
-          %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
-            %i.icon-angle-right
-    .col-lg-9.col-md-9.col-sm-9.col-xs-12.about
-      %p 
-        Driven by enthusiasm and passion, Josh is India’s leading company in building innovative web applications working exclusively in 
-        %span.text-danger Ruby On Rails
-        since 2007.
-      %p 
-        We partner with our clients from concept, design, implementation and maintenance. We believe that
-        %span.text-danger Programming is An Art
-        and have a unique organizational process focused on building solutions to facilitate high performance, scalability, and high-standard code quality.
-      %p
-        We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
-      %p 
-        %a{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
-        %a{href: "http://circleci.com", target: '_blank'} CircleCi,
-        %a{href: "http://github.com", target: '_blank'} Github,
-        %a{href: "http://pivotaltracker.com", target: '_blank'} Pivotal Tracker,
-        and
-        %a{href: "http://trello.com", target: '_blank'} Trello
-        are some of the tools we use to ensure our clients are always happy!
+.container.head
+  = image_tag "Banner 1.bmp"
 .parallax1
   .clients
     .container
