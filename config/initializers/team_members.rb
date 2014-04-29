@@ -1,5 +1,22 @@
 TEAM_MEMBERS= [
-  { 
+{ 
+    id: "kumar",
+    name: "Ramkumar Padmanabhan",
+    title: "Founder & Director",
+    image: "kumar.png",
+    description: "",
+    technical: {
+        twitter: "@RaveRam",
+        facebook: "www.facebook.com/p.ramkumar",
+        github: "Kumar-Synergy"
+    },
+    display: true,
+    index: 0
+  }
+
+  
+
+{ 
     id: "gautam-rege",
     name: "Gautam Rege",
     title: "Director",
@@ -13,7 +30,7 @@ TEAM_MEMBERS= [
         github: "gautamrege"
     },
     display: true,
-    index: 0
+    index: 1
   },
 
   { 
@@ -30,7 +47,7 @@ TEAM_MEMBERS= [
         github: "sethu"
     },
     display: true,
-    index: 1
+    index: 2
   },
 
   { 
@@ -45,21 +62,7 @@ TEAM_MEMBERS= [
         facebook: ""
     },
     display: false,
-    index: 2
+    index: 3
   },
 
-  { 
-    id: "kumar",
-    name: "Ramkumar Padmanabhan",
-    title: "Founder & Director",
-    image: "kumar.png",
-    description: "",
-    technical: {
-        twitter: "@RaveRam",
-        facebook: "www.facebook.com/p.ramkumar",
-        github: "Kumar-Synergy"
-    },
-    display: true,
-    index: 3
-  }
-]
+  ]
