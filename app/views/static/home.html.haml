@@ -5,9 +5,9 @@
     %li{data: {target: "#myCarousel", "slide-to" => 1}}   
   .carousel-inner
     .item.active
-      = image_tag "Banner 2.jpg"
+      = link_to image_tag("Banner 2.jpg"), "about-us" 
     .item
-      = image_tag "Banner 1.bmp"
+      = link_to image_tag("Banner 1.bmp"), "about-us"
   %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
     %i.icon-angle-left
   %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
