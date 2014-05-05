@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: #f77b6f;
+  color: #00AEEF;
 }
 
 p {line-height: 22px}
@@ -248,11 +248,11 @@ p {line-height: 22px}
   line-height: normal;
   margin-top: 40px;
   display: block;
-  color: #f77b6f;
+  color: #00AEEF;
 }
 
 .f-box:hover, .f-box.active {
-  background: #f77b6f;
+  background: #00AEEF;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -813,7 +813,7 @@ ul.about-flex-slides {
 }
 
 .most-popular {
-  background: #f77b6f;
+  background: #00AEEF;
   color: #fff;
 }
 
@@ -941,7 +941,7 @@ ul.about-flex-slides {
 }
 
 .breadcrumb li a{
-  color: #f77b6f;
+  color: #00AEEF;
 }
 
 .breadcrumb li.active {
@@ -1757,7 +1757,7 @@ ul#filters > li > a:hover,
 ul#filters > li > a:focus,
 ul#filters > .active > a,
 ul#filters > .active > span {
-  background: #f77b6f;
+  background: #00AEEF;
   padding: 10px 15px;
   display: inline-block;
   color: #fff;

@@ -46,6 +46,10 @@ class StaticController < ApplicationController
   
   def about_us
     @title = 'About Us | Synergy Software Solutions Pte Ltd'
+    @team_members = TEAM_MEMBERS.sort{|x,y| x[:index] <=> y[:index]}.select { |t| t[:display] }
+    team =  @team_members.collect{|t| t[:name]}.join(", ")
+    @keywords = "The Synergy People, the team, #{team}"
+    @description = "The Synergy People, the team behind our success. #{team}"
   end
 
   def thankyou
