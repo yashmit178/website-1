@@ -19,7 +19,7 @@ class StaticController < ApplicationController
 
   def home
     @projects = PROJECTS.select { |p| p[:display] }
-    @title = 'Ruby on Rails experts in India | Synergy Software Solutions Pte Ltd'
+    @title = 'Ruby on Rails experts | Synergy Software Solutions Pte Ltd'
   end
 
   def testimonials
@@ -57,7 +57,7 @@ class StaticController < ApplicationController
   end
 
   def news
-    @title = 'Josh in News | Synergy Software Solutions Pte Ltd'
+    @title = 'In News | Synergy Software Solutions Pte Ltd'
     @news = NEWS.select{|n| n[:display]}
     @interviews = INTERVIEWS.select{|i| i[:display]}
     @articles = ARTICLES.select{|a| a[:display]}
