@@ -4,9 +4,10 @@ TEAM_MEMBERS= [
     name: "Ramkumar Padmanabhan",
     title: "Founder & Director",
     image: "kumar.png",
-    description: "",
+    description: "Has more than 15 years of experience in providing simple engineering solutions to complex requirements for clients in various domains. He graduated in 1998 with a Bachelors degree in Electrical and Electronics Engineering from Bharathiar University, India",
     technical: {
         twitter: "@RaveRam",
+        linkedin: "http://www.linkedin.com/in/ramkumarpadmanabhan"
         facebook: "www.facebook.com/p.ramkumar",
         github: "Kumar-Synergy"
     },
