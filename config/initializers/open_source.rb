@@ -68,7 +68,7 @@ OPEN_SOURCE= [
       repo: 'eJosh'
     },
     details: "eJOSH is a custom CMS. eJOSH is Rails application that comes with a list of pre-defined layouts and color themes and it is ready to use to build your website or to use for your intranet with it's available plugins (employee management, Leave management, Timesheet management, etc..) and it has built in user management (with 3 different roles).<br> It has built in dynamic sitemap generation for SEO compliance. Capistrano default configuration is included that can be modified to fit your needs.",
-    display: true
+    display: false
   },
 
   {
@@ -80,7 +80,7 @@ OPEN_SOURCE= [
       repo: 'feather_cms'
     },
     details: "We have felt the pain of integrating static pages into a Rails application. There are plenty of gems available for this (Radiant, Locomotiv, etc.) but they are very heavy for what we need.<br> So, we built FeatherCMS. As the name suggests, its a Do-It-Yourself, lightweight CMS - just pages, caching and nothing more!",
-    display: true
+    display: false
   },
 
   {
@@ -92,7 +92,7 @@ OPEN_SOURCE= [
       repo: 'feather_cms'
     },
     details: "SPlat is an integration platform to make use of SMS integration really easy. It ensures single point of integration, supports changing vendors without changing code, sending and receiving SMS, scheduled delivery and tagged groups. It isn't a SMS gateway but a generic layer on top of it. It was presented by Gautam at Lone Star Ruby Conference, 2010.",
-    display: true
+    display: false
   },
 
   {
@@ -104,7 +104,7 @@ OPEN_SOURCE= [
       repo: 'supportbee'
     },
     details: "We are helping to build the supportbee client gem. This is a command line tool that can fetch tickets, see owners, assign labels, generate reports all from command line.",
-    display: true
+    display: false
   },
 
   {
@@ -116,7 +116,7 @@ OPEN_SOURCE= [
       repo: 'isp_unity'
     },
     details: "ISPunity is an open source application that integrates multiple Internet connections for load balancing and failover. It 'magically' balances the Internet load over these different connections. This also means that the more connections we use, the faster and better connectivity we get! It also automatically handles failover to another connection in case any of the lines go down ",
-    display: true
+    display: false
   },
 
   {
