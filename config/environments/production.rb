@@ -89,7 +89,7 @@ Website::Application.configure do
   config.action_mailer.smtp_settings = {
     :user_name => ENV['POSTMARK_API_KEY'],
     :password => ENV['POSTMARK_API_KEY'],
-    :domain => "synergysoft.herokuapp.com",
+    :domain => "synergysoft.com.sg",
     :address => ENV["POSTMARK_SMTP_SERVER"],
     :port => 25,
     :authentication => :plain,
