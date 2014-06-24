@@ -4,7 +4,7 @@ class Notifier < ActionMailer::Base
   def notify_contact(contact)
     @contact = contact
     #mail(to: 'enquiry@synergysoft.com.sg', from: contact.email, subject: 'Request for information', message: contact.message)
-    mail(to: 'shailesh@joshsoftware.com', from: contact.email, subject: 'Request for information', message: contact.message)
+    mail(to: 'shailesh@joshsoftware.com', from: "sethu@joshsoftware.com", subject: "Request for information from #{contact.email}", message: contact.message)
     #add_to_google_spreadsheet
   end
 
