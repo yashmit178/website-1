@@ -4,15 +4,15 @@
     .col-lg-12.about
       %h3 About Us
       %p
-        A software solutions company incorporated in Singapore building innovative web applications working exclusively on 
+        A software solutions company incorporated in Singapore building innovative web applications working exclusively on
         %span.text-danger Ruby On Rails
         Framework.
-      %p 
-        We partner with our clients from concept and design to implementation and maintenance. We firmly believe that 
+      %p
+        We partner with our clients from concept and design to implementation and maintenance. We firmly believe that
         %span.text-danger Programming is An Art
         and have a unique organizational process focused on building solutions to facilitate high performance, scalability, and high-standard code quality.
       %p
-        We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
+        We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load.
         %a{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
         %a{href: "http://circleci.com", target: '_blank'} CircleCi,
         %a{href: "http://github.com", target: '_blank'} Github,
@@ -20,13 +20,13 @@
         and
         %a{href: "http://trello.com", target: '_blank'} Trello
         are some of the tools we use to ensure our clients are always happy!
-.gray-box        
+.gray-box
   .container
     .row
       .text-center.feature-head
         %h1 Meet Our team
         %p We work with forward thinking clients to create beautiful, honest and amazing things that bring positive results.
-        
+
       - @team_members.each do |member|
         .col-lg-4.col-md-4.col-sm-4.col-xs-12
           .person.text-center
@@ -38,7 +38,7 @@
             %p.text-muted #{member[:title]}
           .text-center
             = render 'member_data', member: member
-            
+
 - @team_members.each do |member|
   .modal.fade{"aria-hidden" => "true", "aria-labelledby" => "#{member[:name]}", role: "dialog", tabindex: "-1", id: "#{member[:id]}-modal"}
     .modal-dialog

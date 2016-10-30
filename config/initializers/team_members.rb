@@ -1,5 +1,5 @@
 TEAM_MEMBERS= [
-  { 
+  {
     id: "kumar",
     name: "Ramkumar Padmanabhan",
     title: "Founder & Director",
@@ -15,9 +15,9 @@ TEAM_MEMBERS= [
     index: 0
   },
 
-  
 
-  { 
+
+  {
     id: "gautam-rege",
     name: "Gautam Rege",
     title: "Director",
@@ -34,7 +34,7 @@ TEAM_MEMBERS= [
     index: 1
   },
 
-  { 
+  {
     id: "sethupathi-asokan",
     name: "Sethupathi Asokan",
     title: "Director",
@@ -50,8 +50,24 @@ TEAM_MEMBERS= [
     display: true,
     index: 2
   },
+  {
+    id: "nick-sutterer",
+    name: "Nick Sutterer",
+    title: "Director",
+    image: "nick.jpg",
+    description: "Having worked in the OSS community for more than a decade, Nick is mostly involved in consulting projects. He loves software architecture, refactoring, making people happy and is the creator of Trailblazer.",
+    technical: {
+        twitter: "@apotonick",
+        linkedin: "https://www.linkedin.com/in/nick-sutterer-1743b210",
+        blog: "http://nicksda.wordpress.com",
+        facebook: "https://www.facebook.com/nick.sutterer.7",
+        github: "apotonick"
+    },
+    display: true,
+    index: 3
+  },
 
-  { 
+  {
     id: "abhijit-rege",
     name: "Abhijit Rege",
     title: "Director",
@@ -63,7 +79,7 @@ TEAM_MEMBERS= [
         facebook: ""
     },
     display: false,
-    index: 3
+    index: 4
   }
 
 ]
