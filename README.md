@@ -1,5 +1,5 @@
-website
+Website
 =======
 
-Our website.
+Our Website.
 Singapore, Synergy Software
